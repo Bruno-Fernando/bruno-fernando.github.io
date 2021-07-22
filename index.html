@@ -7,7 +7,7 @@
 <script>
     (function () {
         window.onload = function () {
-            new BlipChat()
+          var builder = new BlipChat()
             .withAppKey('Ym90YXRvbnRlc3RlOmVkNDkyYjhiLTZhZmEtNGNhYi1hYjI3LTljMmM2NWNhMmE5Mw==')
             .withButton({"color":"#2CC3D5","icon":""})
             .withCustomCommonUrl('https://chat.blip.ai/')
@@ -15,8 +15,7 @@
               console.log('enter')
               builder.sendMessage('Olá');
             })
-            .build();
-        }
+          builder.build()
     })();
 </script>
 </body>
