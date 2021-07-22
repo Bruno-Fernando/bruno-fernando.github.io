@@ -18,6 +18,9 @@
         blipClient.sendMessage({
           type: "text/plain",
           content: "Start",
+          metadata: {
+            "#blip.hiddenMessage": true,
+          },
         });
       })
       .build();
