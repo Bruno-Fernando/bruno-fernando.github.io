@@ -5,18 +5,21 @@
 <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 <script>
-    (function () {
-        window.onload = function () {
-          var builder = new BlipChat()
-            .withAppKey('Ym90YXRvbnRlc3RlOmVkNDkyYjhiLTZhZmEtNGNhYi1hYjI3LTljMmM2NWNhMmE5Mw==')
-            .withButton({"color":"#2CC3D5","icon":""})
-            .withCustomCommonUrl('https://chat.blip.ai/')
-            .withEventHandler(BlipChat.ENTER_EVENT, function () {
-              console.log('enter')
-              builder.sendMessage('Olá');
-            })
-          builder.build()
-    })();
+(function () {
+  window.onload = function () {
+    var builder = new BlipChat()
+      .withAppKey(
+        "Ym90YXRvbnRlc3RlOmVkNDkyYjhiLTZhZmEtNGNhYi1hYjI3LTljMmM2NWNhMmE5Mw=="
+      )
+      .withButton({ color: "#2CC3D5", icon: "" })
+      .withCustomCommonUrl("https://chat.blip.ai/")
+      .withEventHandler(BlipChat.ENTER_EVENT, function () {
+        console.log("enter");
+        builder.sendMessage("Olá");
+      });
+    builder.build();
+  };
+})();
 </script>
 </body>
 </html>
